@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .card {
+        @apply 
+        bg-slate-100;
+
+        .card-description {
+            @apply
+            p-4;
+        }
+
+        .card-description p {
+            @apply
+            text-sm;
+        }
+
+        .card-title {
+            @apply
+            font-bold;
+        }
+
+        .card-buttons {
+            @apply
+            flex
+            gap-4
+            justify-between
+            mt-3;
+
+            .edit-btn {
+                @apply
+                bg-gray-900
+                text-slate-100
+                font-semibold
+                text-sm
+                py-1
+                text-center
+                w-full;
+            }
+
+            .delete-btn {
+                @apply
+                bg-red-800
+                text-slate-100
+                font-semibold
+                text-sm
+                py-1
+                text-center
+                w-full;
+            }
+        }
+    }
+    .product-img {
+        @apply 
+        bg-no-repeat
+        bg-center
+        bg-cover
+        w-full
+        h-[100px];
+    }
+}

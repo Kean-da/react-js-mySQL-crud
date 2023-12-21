@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .container {
+        @apply w-11/12 m-auto;
+        @apply px-16;
+    }
+    .tooltip {
+        @apply
+        absolute
+        translate-x-[-50%]
+        bottom-[-45px]
+        left-[50%]
+        bg-slate-900
+        text-slate-100
+        rounded
+        text-sm
+        px-2.5
+        py-2
+        invisible;
+        transition: all, 0.2s, ease-in-out;
+    }
+    .title {
+        @apply
+        text-base
+        font-semibold
+        text-orange-400;
+    }
+    .link {
+        @apply
+        text-sm
+        font-light
+        text-slate-200;
+    }
+    .hover,.link {
+        @apply
+        hover:text-orange-400;
+
+        &:hover {
+            @apply
+             text-orange-400
+            cursor-pointer;
+        }
+    }
+    .button {
+        @apply
+        py-2
+        px-20
+        text-sm
+        font-light
+        text-white;
+    }
+    .form_validation {
+        @apply
+        font-thin
+        text-xs
+        text-red-500;
+    }
+    .home-button {
+        @apply
+        py-2
+        rounded-sm
+        font-semibold
+        text-white;
+    }
+    .form-title-text {
+        @apply
+        mb-10 
+        mt-5
+        text-center 
+        text-4xl
+        font-bold 
+        leading-9 
+        tracking-tight 
+        text-orange-400;
+    }
+}

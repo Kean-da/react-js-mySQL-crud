@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .home-page {
+        @apply
+        py-7;
+
+        .create-button {
+            @apply 
+            bg-blue-600
+            px-4;
+        }
+
+        .products {
+            @apply
+            mt-10
+            grid 
+            grid-cols-4
+            gap-7;
+        }
+    }
+    
+}
